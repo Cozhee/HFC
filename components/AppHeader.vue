@@ -5,7 +5,7 @@
         <div>
           <v-img class="logo" :width="40" src="../public/vector.svg"> </v-img>
         </div>
-        <div class="text-h4 d-flex align-center">HFC</div>
+        <div class="text-h4 d-flex align-center">HJC</div>
       </div>
       <div class="app-navs">
         <ul class="d-flex">
@@ -15,10 +15,8 @@
         </ul>
       </div>
       <div class="app-icons">
-        <v-btn>
-          <v-img class="logo" :width="18" src="../public/magnifyingglass.svg">
-          </v-img>
-        </v-btn>
+        <v-img class="glass" :width="18" src="../public/magnifyingglass.svg">
+        </v-img>
       </div>
     </div>
   </v-container>
@@ -56,7 +54,7 @@ function thing() {
 }
 
 .app-header {
-  background-color: pink;
+  background-color: white;
   margin-top: 74px;
   padding: 25px 130px 25px 130px;
   border-radius: 100px;
@@ -73,6 +71,10 @@ ul {
   font-weight: 500;
   line-height: 28.42px;
   color: #000;
+}
+
+.glass:hover {
+  cursor: pointer;
 }
 
 .nav-link a:hover {
