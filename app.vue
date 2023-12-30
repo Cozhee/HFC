@@ -3,6 +3,7 @@
     <v-app class="app">
       <AppHeader />
       <NuxtPage></NuxtPage>
+      <AppFooter />
     </v-app>
   </div>
 </template>
@@ -11,7 +12,7 @@
 
 <style scoped>
 .app {
-  font-family: Space Grotesk;
-  background-color: rgb(41, 40, 40);
+    font-family: Space Grotesk;
+    background-color: rgb(41, 40, 40);
 }
 </style>
