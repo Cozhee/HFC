@@ -12,6 +12,7 @@
 import { ref } from "vue";
 
 const thing = ref("dog");
+console.log(thing);
 </script>
 
 <style></style>
