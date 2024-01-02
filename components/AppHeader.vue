@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="app-header-wrapper">
     <div class="app-header d-flex justify-space-between align-center">
       <div class="app-logo d-flex">
         <div>
@@ -15,8 +15,7 @@
         </ul>
       </div>
       <div class="app-icons">
-        <v-img class="glass" :width="18" src="../public/magnifyingglass.svg">
-        </v-img>
+        <v-btn color="transparent" icon="mdi-magnify"></v-btn>
       </div>
     </div>
   </v-container>
@@ -33,12 +32,6 @@ const navbarLinks = ref([
   "Portfolio",
   "News",
 ]);
-const drawer = ref(false);
-const hi = ref("hi");
-
-function thing() {
-  console.log(hi.value);
-}
 </script>
 
 <style scoped>
@@ -55,9 +48,9 @@ function thing() {
 
 .app-header {
   background-color: white;
-  margin-top: 74px;
-  padding: 25px 130px 25px 130px;
+  margin-top: 5px;
   border-radius: 100px;
+  padding: 20px;
 }
 
 ul {
@@ -79,5 +72,12 @@ ul {
 
 .nav-link a:hover {
   color: #6d55e9;
+}
+
+.app-header-wrapper {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
 }
 </style>

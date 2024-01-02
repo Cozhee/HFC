@@ -2,7 +2,9 @@
   <div>
     <v-app class="app">
       <AppHeader />
-      <NuxtPage></NuxtPage>
+      <div class="pages">
+        <NuxtPage></NuxtPage>
+      </div>
       <AppFooter />
     </v-app>
   </div>
@@ -12,7 +14,11 @@
 
 <style scoped>
 .app {
-    font-family: Space Grotesk;
-    background-color: rgb(41, 40, 40);
+  font-family: Space Grotesk;
+  background-color: rgb(32, 32, 32);
+}
+
+.pages {
+  padding-top: 240px;
 }
 </style>
