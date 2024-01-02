@@ -45,7 +45,6 @@
 <style scoped>
 .home-page {
   height: 70vh;
-  padding-top: 246px;
 }
 
 .home-page-banner {
