@@ -12,6 +12,7 @@
             HJC is a digital agency passionate about storytelling, visual
             design, and technology. We collaborate with companies...
           </p>
+          <v-btn class="mission-btn"> Explore Our Mission </v-btn>
         </v-col>
         <v-col cols="6"
           ><v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
@@ -34,13 +35,6 @@
   padding-top: 246px;
 }
 
-.purple-pink-gradient {
-  background: linear-gradient(90deg, #5956f0 0%, #ff50b8 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
-}
-
 .home-page-banner {
   color: #fff;
   /* html.themexriver.com/Space Grotesk/Bold 72 title */
@@ -59,6 +53,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 157.895% */
+  margin-top: 35px;
+}
+
+.mission-btn {
   margin-top: 35px;
 }
 </style>
