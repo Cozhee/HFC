@@ -13,5 +13,6 @@
 <style scoped>
 .app {
   font-family: Space Grotesk;
+  background-color: rgb(32, 32, 32);
 }
 </style>

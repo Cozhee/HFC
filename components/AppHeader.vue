@@ -48,7 +48,7 @@ const navbarLinks = ref([
 
 .app-header {
   background-color: white;
-  margin-top: 25px;
+  margin-top: 5px;
   border-radius: 100px;
   padding: 20px;
 }
