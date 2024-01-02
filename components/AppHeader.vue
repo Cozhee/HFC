@@ -10,7 +10,7 @@
       <div class="app-navs">
         <ul class="d-flex">
           <li class="nav-link me-5" v-for="link in navbarLinks">
-            <a :href="link == 'Home' ? '/' : link">{{ link }}</a>
+            <NuxtLink :to="link == 'Home' ? '/' : link">{{ link }}</NuxtLink>
           </li>
         </ul>
       </div>

@@ -42,25 +42,23 @@
               <img src="../public/vector.svg" alt="" />
               <h2 id="abrv">HJC</h2>
             </div>
-            <p>
+            <div>
               We'd LOVE to hear from you! Feel free to reach out to us at
               Lakutic@yourproject.id if you have any questions, need advice, or
-              want to discuss a project.We'd LOVE to hear from you! Feel free to
-              reach out to us at Lakutic@yourproject.id if you have any
-              questions, need advice, or want to discuss a project.
-            </p>
-            <p>
+              want to discuss a project.
+            </div>
+            <div>
               <img src="../assets//images/Address.svg" alt="" />
               Address: 123 Main Street, Suite 200
-            </p>
-            <p>
+            </div>
+            <div>
               <img src="../assets//images/Email.svg" alt="" />
               Email: <a href="mailto:email@example.com"> email@example.com</a>
-            </p>
-            <p>
+            </div>
+            <div>
               <img src="../assets//images/Phone.svg" alt="" />
-              Phone: <a href="tel:123-456-789">123-456-789</a>
-            </p>
+              Phone: <a href="tel:123-456-789"> 123-456-789</a>
+            </div>
             <!-- <div class="social-media">
                             <span>FACEBOOK</span>
                             <span>INSTAGRAM</span>
@@ -75,7 +73,7 @@
             </div>
             <ul class="d-flex flex-column">
               <li class="links" v-for="link in quickLinks">
-                <a href="">{{ link }}</a>
+                <NuxtLink to="">{{ link }}</NuxtLink>
               </li>
             </ul>
           </div>
@@ -88,7 +86,7 @@
             </div>
             <ul class="d-flex flex-column">
               <li class="links" v-for="link in categories">
-                <a href="">{{ link }}</a>
+                <NuxtLink to="">{{ link }}</NuxtLink>
               </li>
             </ul>
           </div></v-col
@@ -129,17 +127,17 @@ const categories = ref([
 }
 
 .footer-detail {
-  height: 100%;
+  height: 75%;
   color: #fff;
   font-family: "Space Grotesk";
   font-size: 15px;
 }
 
-.footer-detail p {
+.footer-detail div {
   display: flex;
 }
 
-p img {
+div img {
   padding-right: 1rem;
 }
 
@@ -191,5 +189,10 @@ a {
 }
 .links a {
   text-decoration: none;
+}
+
+.links a:hover {
+  color: #6d55e9;
+  cursor: pointer;
 }
 </style>
