@@ -94,7 +94,7 @@ const categories = ref([
 }
 
 .footer-detail {
-    height: 100%;
+    height: 75%;
     color: #FFF;
     font-family: "Space Grotesk";
     font-size: 15px;
