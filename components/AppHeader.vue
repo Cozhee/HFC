@@ -10,7 +10,7 @@
       <div class="app-navs">
         <ul class="d-flex">
           <li class="nav-link me-5" v-for="link in navbarLinks">
-            <a href="">{{ link }}</a>
+            <a :href="link == 'Home' ? '/' : link">{{ link }}</a>
           </li>
         </ul>
       </div>
