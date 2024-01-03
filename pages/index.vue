@@ -29,6 +29,7 @@
         </v-col>
       </v-row>
     </v-container>
+    <HomePageAboutUs />
   </div>
 </template>
 
@@ -36,7 +37,7 @@
 
 <style scoped>
 .home-page {
-  height: 70vh;
+  min-height: 70vh;
 }
 
 .home-page-banner {
