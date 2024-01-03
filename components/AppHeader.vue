@@ -30,7 +30,7 @@ const navbarLinks = ref([
   "Services",
   "Pricing",
   "Portfolio",
-  "News",
+  "Contact",
 ]);
 </script>
 
