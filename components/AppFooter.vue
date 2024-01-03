@@ -1,6 +1,6 @@
 <template>
   <v-container-fluid class="footer">
-    <div class="image-row d-flex">
+    <!-- <div class="image-row d-flex">
       <v-img
         :height="275"
         cover
@@ -31,7 +31,7 @@
         class="w-20"
         src="../assets/images/footer_gril.png"
       ></v-img>
-    </div>
+    </div> -->
     <v-container class="footer-body">
       <v-row class="footer-body-row justify-center">
         <v-col :cols="6">
@@ -53,11 +53,13 @@
             </div>
             <div>
               <img src="../assets//images/Email.svg" alt="" />
-              Email: <a href="mailto:email@example.com"> email@example.com</a>
+              Email:&nbsp;<a href="mailto:email@example.com">
+                email@example.com
+              </a>
             </div>
             <div>
               <img src="../assets//images/Phone.svg" alt="" />
-              Phone: <a href="tel:123-456-789"> 123-456-789</a>
+              Phone:&nbsp;<a href="tel:123-456-789"> 123-456-789 </a>
             </div>
             <!-- <div class="social-media">
                             <span>FACEBOOK</span>

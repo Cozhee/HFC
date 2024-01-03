@@ -2,7 +2,7 @@
   <div>
     <v-app class="app">
       <AppHeader />
-      <div class="pages">
+      <div class="pages" :class="{ contactPage: contactPage }">
         <NuxtPage></NuxtPage>
       </div>
       <AppFooter />
@@ -10,7 +10,16 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+const contactPage = computed(() => {
+  return route.path === "/Contact";
+});
+</script>
 
 <style scoped>
 .app {
@@ -20,5 +29,9 @@
 
 .pages {
   padding-top: 240px;
+}
+
+.contactPage {
+  background: url("./assets/images/contactus-bg.png") no-repeat 50% 50%;
 }
 </style>
