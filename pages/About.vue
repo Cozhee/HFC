@@ -1,11 +1,5 @@
 <template>
-  <p>{{ thing }}</p>
-  <p>{{ thing }}</p>
-  <p>{{ thing }}</p>
-  <p>{{ thing }}</p>
-  <p>{{ thing }}</p>
-  <p>{{ thing }}</p>
-  <p>{{ thing }}</p>
+  <HomePageAboutUs />
 </template>
 
 <script setup>
@@ -15,4 +9,6 @@ const thing = ref("dog");
 console.log(thing);
 </script>
 
-<style></style>
+<style scoped>
+
+</style>
