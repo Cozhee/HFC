@@ -119,10 +119,6 @@ const categories = ref([
 </script>
 
 <style scoped>
-.footer-body {
-  height: 572px;
-}
-
 .footer-body-row {
   height: 100%;
 }
