@@ -9,29 +9,61 @@
       </div>
       <div class="app-navs">
         <ul class="d-flex">
-          <li class="nav-link me-5" v-for="link in navbarLinks">
-            <NuxtLink :to="link == 'Home' ? '/' : link">{{ link }}</NuxtLink>
+          <li class="nav-link me-5 d-none d-md-block" v-for="link in links">
+            <NuxtLink :to="link.route">{{ link.name }}</NuxtLink>
           </li>
         </ul>
       </div>
       <div class="app-icons">
-        <v-btn color="transparent" icon="mdi-magnify"></v-btn>
+        <v-btn variant="text" icon="mdi-magnify"></v-btn>
+        <v-btn
+          @click.stop="drawerOpenAndCloseMenu"
+          class="d-none hamburger-menu"
+          variant="text"
+        >
+          <v-icon
+            size="x-large"
+            :icon="closed === true ? 'mdi-menu-open' : 'mdi-menu-close'"
+          ></v-icon>
+        </v-btn>
       </div>
     </div>
   </v-container>
+  <v-navigation-drawer v-model="drawer" temporary>
+    <v-list class="mt-5" density="compact" nav>
+      <v-list-item
+        class="nav-link"
+        v-for="link in links"
+        :prepend-icon="link.sideNavIcon"
+        ><NuxtLink :to="link.route">
+          {{ link.name }}
+        </NuxtLink></v-list-item
+      >
+    </v-list>
+  </v-navigation-drawer>
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
-const navbarLinks = ref([
-  "Home",
-  "About",
-  "Services",
-  "Pricing",
-  "Portfolio",
-  "Contact",
+const links = ref([
+  { name: "Home", route: "/", sideNavIcon: "mdi-home-circle" },
+  { name: "About", route: "/about", sideNavIcon: "mdi-account" },
+  { name: "Services", route: "/services", sideNavIcon: "mdi-room-service" },
+  { name: "Pricing", route: "/pricing", sideNavIcon: "mdi-currency-usd" },
+  { name: "Contact", route: "/contact", sideNavIcon: "mdi-email-box" },
 ]);
+
+const drawer = ref(null);
+const closed = ref(false);
+
+watch(drawer, () => {
+  closed.value = !closed.value;
+});
+
+function drawerOpenAndCloseMenu() {
+  drawer.value = !drawer.value;
+}
 </script>
 
 <style scoped>
@@ -66,12 +98,16 @@ ul {
   color: #000;
 }
 
-.glass:hover {
-  cursor: pointer;
-}
-
 .nav-link a:hover {
   color: #6d55e9;
+}
+
+.nav-link {
+  color: black;
+}
+
+.glass:hover {
+  cursor: pointer;
 }
 
 .app-header-wrapper {
@@ -79,5 +115,20 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
+}
+
+@media screen and (width < 960px) {
+  .app-header-wrapper {
+    padding: 0;
+  }
+
+  .app-header {
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .hamburger-menu {
+    display: inline-block !important;
+  }
 }
 </style>

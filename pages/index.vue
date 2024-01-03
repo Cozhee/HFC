@@ -2,7 +2,7 @@
   <div class="home-page">
     <v-container>
       <v-row class="d-flex">
-        <v-col cols="6">
+        <v-col sm="12" md="10" lg="6">
           <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
           <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
           <p class="home-page-banner">
@@ -17,21 +17,13 @@
           </v-btn>
         </v-col>
         <v-col cols="6" class="d-flex">
-          <div>
+          <div class="container">
             <v-img
-              class="hacker-girl"
+              class="rounded-xl d-none d-lg-block"
+              min-width="300"
               cover
-              height="452"
-              src="../assets/images/girl_hacker.png"
-            ></v-img>
-          </div>
-          <div>
-            <v-img
-              class="desk-people"
-              cover
-              height="452"
               :aspect-ratio="1"
-              src="../assets/images/people_at_desk.png"
+              src="../assets/images/girl_hacker.png"
             ></v-img>
           </div>
         </v-col>
@@ -73,16 +65,16 @@
   color: white;
 }
 
-.hacker-girl,
-.desk-people {
-  width: 307px;
-  height: 515.851px;
-  flex-shrink: 0;
+.container {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
 }
 
 .hacker-girl {
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
 .desk-people {
