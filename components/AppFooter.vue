@@ -1,5 +1,5 @@
 <template>
-  <v-container-fluid class="footer">
+  <v-container fluid class="footer">
     <!-- <div class="image-row d-flex">
       <v-img
         :height="275"
@@ -95,7 +95,7 @@
         >
       </v-row>
     </v-container>
-  </v-container-fluid>
+  </v-container>
 </template>
 
 <script setup>
@@ -120,7 +120,6 @@ const categories = ref([
 
 <style scoped>
 .footer-body {
-  padding: 5rem 5rem 0 5rem;
   height: 572px;
 }
 
