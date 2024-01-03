@@ -8,3 +8,8 @@
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
 }
+
+.link-btn {
+  text-decoration: none;
+  color: #fff;
+}
