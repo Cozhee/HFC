@@ -2,11 +2,6 @@
   margin-right: 17px;
 }
 
-.footer {
-    height: 850px !important;
-    margin-top: 150px;
-}
-
 .purple-pink-gradient {
   background: linear-gradient(90deg, #5956f0 0%, #ff50b8 100%);
   background-clip: text;
