@@ -95,13 +95,8 @@ const rules = ref([
 
 <style scoped>
 .contact-main {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background: url("../assets/images/contactus-bg.png") no-repeat 50% 50%;
-  background-color: rgba(0, 0, 0, 0);
 }
 .contact-container {
   margin-top: 240px;
