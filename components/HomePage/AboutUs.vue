@@ -1,13 +1,24 @@
 <template>
     <v-container fluid class="about-page pa-16">
       <v-row class="d-flex">
-        <v-col cols="5" class="">
-          <div class="image-area">
-            <div class="d-flex justify-center">
-              <img class="about-image pr-12" src="../../assets/images/About/aboutus_people.png" />
-            </div>
+        <v-col cols="5" class="pb-0 pt-10">
+          <div class="image-area d-flex justify-end">
+            <img class="about-image pr-12" src="../../assets/images/About/aboutus_people.png" />
             <div class="experience-box">
-              <p><span>69+</span>Years Experiences</p>
+              <p class="experience-numbers">5+</p>
+              <p>Years</p>
+              <p>Experience</p>
+            </div>
+            <div class="outer-border"></div>
+            <div class="shape-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="400" viewBox="0 0 299 462" fill="none">
+                <path d="M142.095 461.128L113.266 369.849L33.3259 422.936L70.4196 333.186L-26.4346 339.082L43.8696 271.769L-49.4068 243.981L38.5697 202.354L-41.1389 146.496L55.4877 137.618L5.19827 54.5401L92.2709 94.8755L106.909 0.278211L135.739 91.5567L215.678 38.4696L178.585 128.219L275.439 122.324L205.135 189.637L298.411 217.425L210.435 259.051L290.143 314.91L193.517 323.788L243.806 406.866L156.733 366.53L142.095 461.128Z" fill="#7054E7"/>
+              </svg>
+            </div>
+            <div class="line-svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="115" height="45" viewBox="0 0 150 73" fill="none">
+                <path d="M3.58844 28.7497L35.6877 64.3697L56.718 17.6267L91.0379 55.722L112.068 8.97897L145.824 47.1591" stroke="#7954E4" stroke-width="9" stroke-miterlimit="10"/>
+              </svg>
             </div>
           </div>
         </v-col>
@@ -23,15 +34,15 @@
               </div>
             </div>
             <div class="about-text mt-8 mb-12">
-              <p>HJC is the sum of 3 happy, wild, spirited, shy, geeky, artsy and faggot team members. Our agency strives to User-Friendly UI, with multiple fortnite balls to offer, which in turn become fantastic kekw moments.</p>
+              <p>Discover the essence of HJC, where happiness, creativity, and geeky expertise converge to shape seamless, User-Friendly UI experiences. Our team of three brings dynamic skills to every project, weaving visually stunning and impactful digital narratives. Join us as we redefine web development with a blend of passion and innovation, creating memorable online journeys.</p>
             </div>
             <v-container class="excess d-flex pa-0">
               <v-row>
                 <v-col cols="6" v-for="data in excessData" :key="data.text">
                   <div class="d-flex">
-                      <v-row>
-                        <v-col cols="3" class="pr-0"><v-img :height="data.height" :width="data.width" :src="getImageUrl(data.img)"></v-img></v-col>
-                        <v-col cols="9" class="pl-0"><p>{{data.text}}</p></v-col>
+                      <v-row class="d-flex align-center">
+                        <v-col cols="2" class="pr-0"><v-img :height="data.height" :width="data.width" :src="getImageUrl(data.img)"></v-img></v-col>
+                        <v-col cols="10" class="pl-0"><p>{{data.text}}</p></v-col>
                       </v-row>
                   </div>
                 </v-col>
@@ -92,21 +103,56 @@
 
   .about-page {
     width: 100%;
+    height: 711px;
     background: #FFF;
-    margin: 0
+    margin: 0;
+    overflow: hidden;
   }
   .about-image {
-    width: 75%;
+    width: 52%;
     height: 450px;
     flex-shrink: 0;
     border-radius: 300px 300px 0px 0px;
     object-fit: none;
     background: url(../../assets/images/About/aboutus_people.png), lightgray 50% / cover no-repeat, #D9D9D9;
+    z-index: 1;
+  }
+
+  .image-area {
+    position: relative;
+    height: 100%;
+  }
+
+  .outer-border {
+    width: 45%;
+    height: 425px;
+    flex-shrink: 0;
+    border-radius: 300px 300px 0px 0px;
+    border: 5px solid #6855EA;
+    position: absolute;
+    bottom: 105px;
+    right: 30px;
+    z-index: 1;
+  }
+
+  .shape-svg {
+    position: absolute;
+    bottom: 110px;
+    right: 275px;
+    transform: rotate(180deg);
+  }
+
+  .line-svg {
+    position: absolute;
+    bottom: 425px;
+    right: 20px;
+    z-index: 1;
   }
 
   .heading-text p{
     color: #000;
     font-size: 48px;
+    line-height: 64px;
   }
   .about-btn {
     margin-top: 35px;
@@ -115,10 +161,26 @@
 
   .experience-box {
     background: linear-gradient(139deg, #6A55EA 6.37%, #EF50BD 100.26%);
-    width: 160px;
-height: 125px;
-flex-shrink: 0;
-border-radius: 25px;
+    width: 143px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 25px 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    z-index: 2;
+  }
+
+  .experience-numbers {
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 60% */
+    padding-bottom: 0.5rem;
   }
   </style>
   
