@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-main h-screen">
+  <div class="contact-main">
     <v-container class="contact-container">
       <v-row>
         <v-col col="6">
@@ -43,7 +43,11 @@
                 label="Tell us what you need"
               ></v-textarea>
 
-              <v-btn type="submit" block class="mt-2" @click="woof"
+              <v-btn
+                type="submit"
+                block
+                class="mt-2 contact-button"
+                @click="woof"
                 >Submit</v-btn
               >
             </v-form>
@@ -96,13 +100,19 @@ const rules = ref([
 <style scoped>
 .contact-main {
   width: 100%;
-  height: 100%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0);
 }
 .contact-container {
-  margin-top: 240px;
-  margin-bottom: 240px;
   width: 75%;
 }
+
+.contact-button {
+  background: linear-gradient(180deg, #7255e7 0%, #e050c2 100%);
+  color: white;
+  text-transform: up;
+}
+
 v-sheet {
   padding: 100rem;
 }
