@@ -64,9 +64,7 @@
   
   <script setup>
   import { ref } from "vue";
-  
-  const thing = ref("dog");
-  
+
   const excessData = ref([
     {
       text: "UX/UI Design & Website/App Design",

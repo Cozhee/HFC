@@ -9,7 +9,7 @@
       </div>
       <div class="app-navs">
         <ul class="d-flex">
-          <li class="nav-link me-5 d-none d-md-block" v-for="link in links">
+          <li class="nav-link me-5 d-none d-md-block" v-for="link in links" :key="link">
             <NuxtLink :to="link.route">{{ link.name }}</NuxtLink>
           </li>
         </ul>
