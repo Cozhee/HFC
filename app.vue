@@ -17,7 +17,7 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 
 const contactPage = computed(() => {
-  return route.path === "/Contact";
+  return route.path === "/contact";
 });
 </script>
 

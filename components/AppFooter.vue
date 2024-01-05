@@ -48,17 +48,17 @@
               want to discuss a project.
             </div>
             <div>
-              <img src="../assets//images/Address.svg" alt="" />
+              <img src="../assets/images/Address.svg" alt="" />
               Address: 123 Main Street, Suite 200
             </div>
             <div>
-              <img src="../assets//images/Email.svg" alt="" />
+              <img src="../assets/images/Email.svg" alt="" />
               Email:&nbsp;<a href="mailto:email@example.com">
                 email@example.com
               </a>
             </div>
             <div>
-              <img src="../assets//images/Phone.svg" alt="" />
+              <img src="../assets/images/Phone.svg" alt="" />
               Phone:&nbsp;<a href="tel:123-456-789"> 123-456-789 </a>
             </div>
             <!-- <div class="social-media">
@@ -74,7 +74,7 @@
               <hr />
             </div>
             <ul class="d-flex flex-column">
-              <li class="links" v-for="link in quickLinks">
+              <li class="links" v-for="link in quickLinks" :key="link">
                 <NuxtLink to="">{{ link }}</NuxtLink>
               </li>
             </ul>
@@ -87,7 +87,7 @@
               <hr />
             </div>
             <ul class="d-flex flex-column">
-              <li class="links" v-for="link in categories">
+              <li class="links" v-for="link in categories" :key="link">
                 <NuxtLink to="">{{ link }}</NuxtLink>
               </li>
             </ul>
