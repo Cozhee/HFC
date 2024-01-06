@@ -9,7 +9,26 @@
   text-transform: uppercase;
 }
 
-.link-btn {
-  text-decoration: none;
-  color: #fff;
+.global-header {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 82.3px;
 }
+
+@media screen and (width < 960px) {
+  /* Start Home Page */ 
+  .global-header {
+      font-size: 3em;
+  }
+
+  .home-page-mission-text {
+    margin-top: 10px !important;
+  }
+
+  .our-works {
+    padding: 50px 20px !important;
+  }
+  /* End Home Page */
+}
+

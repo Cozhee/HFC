@@ -28,10 +28,13 @@ const contactPage = computed(() => {
 }
 
 .pages {
-  padding-top: 240px;
+  padding-top: 100px;
 }
 
 .contactPage {
   background: url("./assets/images/contactus-bg.png") no-repeat 50% 50%;
+}
+
+@media screen and (width < 960px) {
 }
 </style>
