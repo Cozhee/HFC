@@ -32,6 +32,7 @@ html, body{
 
   .our-works {
     padding: 50px 20px !important;
+    height: calc(100vh - 100px);
   }
   /* End Home Page */
 }

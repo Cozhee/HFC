@@ -1,6 +1,6 @@
 <template>
-  <v-container class="our-works">
-    <v-row class="d-flex">
+  <v-container class="our-works d-flex">
+    <v-row class="d-flex align-center">
       <v-col sm="12" md="10" lg="6">
         <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
         <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
