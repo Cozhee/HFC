@@ -1,3 +1,7 @@
+html, body{
+  overflow-x: hidden;
+}
+
 .logo {
   margin-right: 17px;
 }
@@ -16,7 +20,7 @@
     line-height: 82.3px;
 }
 
-@media screen and (width < 960px) {
+@media screen and (width < 700px) {
   /* Start Home Page */ 
   .global-header {
       font-size: 3em;

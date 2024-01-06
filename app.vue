@@ -34,7 +34,4 @@ const contactPage = computed(() => {
 .contactPage {
   background: url("./assets/images/contactus-bg.png") no-repeat 50% 50%;
 }
-
-@media screen and (width < 960px) {
-}
 </style>
