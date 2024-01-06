@@ -28,7 +28,7 @@ const contactPage = computed(() => {
 }
 
 .pages {
-  padding-top: 240px;
+  padding-top: 100px;
 }
 
 .contactPage {
@@ -36,8 +36,5 @@ const contactPage = computed(() => {
 }
 
 @media screen and (width < 960px) {
-  .pages {
-    padding-top: 150px;
-  }
 }
 </style>
