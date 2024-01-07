@@ -27,10 +27,6 @@ const contactPage = computed(() => {
   background-color: rgb(32, 32, 32);
 }
 
-.pages {
-  padding-top: 100px;
-}
-
 .contactPage {
   background: url("./assets/images/contactus-bg.png") no-repeat 50% 50%;
 }

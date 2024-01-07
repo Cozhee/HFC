@@ -20,19 +20,22 @@ html, body{
     line-height: 82.3px;
 }
 
-@media screen and (width < 700px) {
+.pages {
+  padding-top: 100px;
+}
+
+.global-container {
+  padding: 20px 50px;
+}
+
+@media screen and (width < 960px) {
   /* Start Home Page */ 
   .global-header {
       font-size: 3em;
   }
 
-  .home-page-mission-text {
-    margin-top: 10px !important;
-  }
-
-  .our-works {
-    padding: 50px 20px !important;
-    height: calc(100vh - 100px);
+  .pages { 
+    padding-top: 79px;
   }
   /* End Home Page */
 }

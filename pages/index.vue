@@ -1,14 +1,10 @@
 <template>
-  <div class="home-page">
-    <HomePageOurWorks />
-    <HomePageAboutUs />
-  </div>
+  <HomePageOurWorks />
+  <HomePageAboutUs />
 </template>
 
 <script setup></script>
 
 <style scoped>
-.home-page {
-  min-height: 70vh;
-}
+/* Having this blank breaks the component, not sure why. A comment fixes it. */
 </style>

@@ -14,11 +14,11 @@
         </v-btn>
       </v-col>
       <v-col sm="12" md="10" lg="6" class="d-none d-lg-flex">
-        <div class="container">
+        <div class="container d-flex">
           <v-img
             class="rounded-xl d-none d-lg-block"
             min-width="300"
-            cover
+            contain
             :aspect-ratio="1"
             src="../../assets/images/girl_hacker.png"
           ></v-img>
@@ -31,6 +31,9 @@
 <script setup></script>
 
 <style scoped>
+.our-works {
+  height: calc(100vh - 100px);
+}
 .home-page-mission-text {
   color: #e1e1e1;
   font-family: Space Grotesk;
@@ -53,9 +56,6 @@
   max-height: 500px;
 }
 
-.our-works {
-  padding-top: 100px;
-}
 .hacker-girl {
   width: 100%;
   height: 100% !important;
@@ -65,5 +65,16 @@
 .desk-people {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
+}
+
+@media screen and (width < 700px) {
+  .home-page-mission-text {
+    margin-top: 10px !important;
+  }
+
+  .our-works {
+    padding: 50px 20px !important;
+    height: calc(100vh - 79px);
+  }
 }
 </style>
