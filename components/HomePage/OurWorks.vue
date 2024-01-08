@@ -2,7 +2,7 @@
   <v-container class="our-works-wrapper">
     <v-container class="our-works d-flex">
       <v-row class="d-flex align-center">
-        <v-col sm="12" md="10" lg="6">
+        <v-col sm="12">
           <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
           <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
           <p class="global-header">Custom Design For Your Digital Products.</p>
@@ -14,7 +14,7 @@
             Explore Our Mission
           </v-btn>
         </v-col>
-        <v-col sm="12" md="10" lg="6" class="d-none d-lg-flex">
+        <!-- <v-col sm="12" md="10" lg="6" class="d-none d-lg-flex">
           <div class="container d-flex">
             <v-img
               class="rounded-xl d-none d-lg-block"
@@ -24,7 +24,7 @@
               src="../../assets/images/girl_hacker.png"
             ></v-img>
           </div>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </v-container>

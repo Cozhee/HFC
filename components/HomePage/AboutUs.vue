@@ -77,7 +77,7 @@
                   :key="data.text"
                 >
                   <div class="d-flex">
-                    <div class="d-flex">
+                    <div class="d-flex align-center">
                       <v-img
                         :height="data.height"
                         :width="data.width"
