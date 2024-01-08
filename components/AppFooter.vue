@@ -2,24 +2,22 @@
   <v-container fluid class="footer">
     <v-container class="footer-body">
       <v-row class="footer-body-row justify-center">
-        <v-col :cols="6">
+        <v-col cols="12" md="6">
           <div class="footer-detail d-flex flex-column justify-space-between">
             <div class="fd-header d-flex align-center">
-              <!-- <v-col :cols="4"><v-img :cols="2" class="logo" :width="51" :height="75" src="../public/vector.svg"> </v-img></v-col> -->
-              <!-- <v-col id="abrv"><h2>HJC</h2></v-col> -->
               <img src="../public/vector.svg" alt="" />
               <h2 id="abrv">HJC</h2>
             </div>
-            <div>
+            <div class="mb-3">
               We'd LOVE to hear from you! Feel free to reach out to us at
               Lakutic@yourproject.id if you have any questions, need advice, or
               want to discuss a project.
             </div>
-            <div>
+            <div class="mb-3">
               <img src="../assets/images/Address.svg" alt="" />
               Address: 123 Main Street, Suite 200
             </div>
-            <div>
+            <div class="mb-3">
               <img src="../assets/images/Email.svg" alt="" />
               Email:&nbsp;<a href="mailto:email@example.com">
                 email@example.com
@@ -29,13 +27,9 @@
               <img src="../assets/images/Phone.svg" alt="" />
               Phone:&nbsp;<a href="tel:123-456-789"> 123-456-789 </a>
             </div>
-            <!-- <div class="social-media">
-                            <span>FACEBOOK</span>
-                            <span>INSTAGRAM</span>
-                        </div> -->
           </div>
         </v-col>
-        <v-col :cols="3">
+        <v-col cols="12" md="3">
           <div class="quick-links">
             <div class="sub-header">
               QUICK LINKS
@@ -48,7 +42,7 @@
             </ul>
           </div>
         </v-col>
-        <v-col :cols="3">
+        <v-col cols="12" md="3">
           <div class="categories">
             <div class="sub-header">
               CATEGORIES
@@ -121,7 +115,6 @@ a {
 .fd-header img {
   height: 75px;
   width: 51px;
-  margin-right: 1.5rem;
 }
 
 #abrv {
@@ -136,7 +129,7 @@ a {
   font-family: Space Grotesk;
   font-size: 20px;
   font-weight: bolder;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 .links {
   list-style-type: none;
