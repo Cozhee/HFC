@@ -1,37 +1,5 @@
 <template>
   <v-container fluid class="footer">
-    <!-- <div class="image-row d-flex">
-      <v-img
-        :height="275"
-        cover
-        class="w-20"
-        src="../assets/images/footer_cat.png"
-      ></v-img>
-      <v-img
-        :height="275"
-        cover
-        class="w-20"
-        src="../assets/images/footer_spaceman.png"
-      ></v-img>
-      <v-img
-        :height="275"
-        cover
-        class="w-20"
-        src="../assets/images/footer_triangles.png"
-      ></v-img>
-      <v-img
-        :height="275"
-        cover
-        class="w-20"
-        src="../assets/images/footer_circle.png"
-      ></v-img>
-      <v-img
-        :height="275"
-        cover
-        class="w-20"
-        src="../assets/images/footer_gril.png"
-      ></v-img>
-    </div> -->
     <v-container class="footer-body">
       <v-row class="footer-body-row justify-center">
         <v-col :cols="6">

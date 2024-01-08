@@ -1,30 +1,32 @@
 <template>
-  <v-container class="our-works d-flex">
-    <v-row class="d-flex align-center">
-      <v-col sm="12" md="10" lg="6">
-        <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
-        <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
-        <p class="global-header">Custom Design For Your Digital Products.</p>
-        <p class="home-page-mission-text">
-          HJC is a digital agency passionate about storytelling, visual design,
-          and technology. We collaborate with companies...
-        </p>
-        <v-btn size="large" rounded="xl" class="mission-btn">
-          Explore Our Mission
-        </v-btn>
-      </v-col>
-      <v-col sm="12" md="10" lg="6" class="d-none d-lg-flex">
-        <div class="container d-flex">
-          <v-img
-            class="rounded-xl d-none d-lg-block"
-            min-width="300"
-            contain
-            :aspect-ratio="1"
-            src="../../assets/images/girl_hacker.png"
-          ></v-img>
-        </div>
-      </v-col>
-    </v-row>
+  <v-container class="our-works-wrapper">
+    <v-container class="our-works d-flex">
+      <v-row class="d-flex align-center">
+        <v-col sm="12" md="10" lg="6">
+          <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
+          <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
+          <p class="global-header">Custom Design For Your Digital Products.</p>
+          <p class="home-page-mission-text">
+            HJC is a digital agency passionate about storytelling, visual
+            design, and technology. We collaborate with companies...
+          </p>
+          <v-btn size="large" rounded="xl" class="mission-btn">
+            Explore Our Mission
+          </v-btn>
+        </v-col>
+        <v-col sm="12" md="10" lg="6" class="d-none d-lg-flex">
+          <div class="container d-flex">
+            <v-img
+              class="rounded-xl d-none d-lg-block"
+              min-width="300"
+              contain
+              :aspect-ratio="1"
+              src="../../assets/images/girl_hacker.png"
+            ></v-img>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-container>
 </template>
 
@@ -67,7 +69,7 @@
   border-bottom-right-radius: 100px;
 }
 
-@media screen and (width < 700px) {
+@media screen and (width < 960px) {
   .home-page-mission-text {
     margin-top: 10px !important;
   }
