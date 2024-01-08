@@ -84,7 +84,6 @@ function drawerOpenAndCloseMenu() {
 
 .app-header {
   background-color: white;
-  margin-top: 5px;
   border-radius: 15px;
   padding: 10px;
 }

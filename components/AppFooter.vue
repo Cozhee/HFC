@@ -4,7 +4,7 @@
       <v-row class="footer-body-row justify-center">
         <v-col cols="12" md="6">
           <div class="footer-detail d-flex flex-column justify-space-between">
-            <div class="fd-header d-flex align-center">
+            <div class="fd-header d-flex align-center mb-3">
               <img src="../public/vector.svg" alt="" />
               <h2 id="abrv">HJC</h2>
             </div>
@@ -23,7 +23,7 @@
                 email@example.com
               </a>
             </div>
-            <div>
+            <div class="mb-3">
               <img src="../assets/images/Phone.svg" alt="" />
               Phone:&nbsp;<a href="tel:123-456-789"> 123-456-789 </a>
             </div>
