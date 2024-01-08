@@ -23,7 +23,7 @@
                 :key="data.headerText"
               >
                 <div class="content-left">
-                  <img src="../assets/images/Services/Icon.svg" alt="" />
+                  <img src="../../assets/images/Services/Icon.svg" alt="" />
                   <div class="left-text">
                     <p class="left-header">{{ data.headerText }}</p>
                     <p class="left-subhead">{{ data.subText }}</p>
@@ -120,7 +120,6 @@ const contentData = ref([
 
 .left-text {
   padding: 1.5rem;
-  padding-left: 0;
 }
 
 .left-header {
