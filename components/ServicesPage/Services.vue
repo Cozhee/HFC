@@ -12,11 +12,14 @@
                 </h4>
               </div>
               <div class="focus-text global-header">
-                We Empower Clients<br />
-                To Be Awesome
+                We Empower <br /> Clients
+                To Be<br /> Awesome
               </div>
             </div>
             <div class="services-content">
+              <p class="mission-text">
+                Welcome to our web development agency, where we specialize in creating custom-designed websites from scratch using HTML and CSS. Our services include SEO to boost your online visibility, hassle-free hosting solutions, ongoing maintenance for optimal performance, and dedicated customer support for a seamless experience. Trust us to bring innovation and excellence to your digital presence.  
+              </p>
               <div
                 class="content-row"
                 v-for="data in contentData"
@@ -88,12 +91,25 @@ const contentData = ref([
 .services-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .focus-text {
   color: #fff;
   font-size: 60px;
   font-weight: 700;
+  text-align: center;
+  line-height: 82.3px;
+}
+
+.mission-text {
+  color: #e1e1e1;
+  font-family: Space Grotesk;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 35px;
 }
 
 .content-row {

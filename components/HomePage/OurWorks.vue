@@ -2,10 +2,10 @@
   <v-container class="our-works-wrapper">
     <v-container class="our-works d-flex">
       <v-row class="d-flex align-center">
-        <v-col sm="12">
+        <v-col cols="12">
           <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
           <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
-          <p class="global-header">Custom Design For Your Digital Products.</p>
+          <p class="global-header">Custom Design for <br class="brnodisplay">Your Digital Products.</p>
           <p class="home-page-mission-text">
             HJC is a digital agency passionate about storytelling, visual
             design, and technology. We collaborate with companies...
@@ -77,6 +77,12 @@
   .our-works {
     padding: 50px 20px !important;
     height: calc(100vh - 79px);
+  }
+}
+
+@media screen and (width < 505px) {
+  .brnodisplay {
+    display: none
   }
 }
 </style>
