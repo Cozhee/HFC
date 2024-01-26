@@ -73,18 +73,67 @@
                   class="d-flex"
                   cols="12"
                   sm="6"
-                  v-for="data in excessData"
-                  :key="data.text"
                 >
                   <div class="d-flex">
                     <div class="d-flex align-center">
                       <v-img
-                        :height="data.height"
-                        :width="data.width"
-                        :src="getImageUrl(data.img)"
+                        height="40"
+                        width="40"
+                        src="../../assets/images/About/Idea.svg"
                         class="me-3"
                       ></v-img>
-                      <p>{{ data.text }}</p>
+                      <p>UX/UI Design & Website/App Design</p>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col
+                  class="d-flex"
+                  cols="12"
+                  sm="6"
+                >
+                  <div class="d-flex">
+                    <div class="d-flex align-center">
+                      <v-img
+                        height="40"
+                        width="40"
+                        src="../../assets/images/About/Creative.svg"
+                        class="me-3"
+                      ></v-img>
+                      <p>Creative Idea & Problem Solving</p>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col
+                  class="d-flex"
+                  cols="12"
+                  sm="6"
+                >
+                  <div class="d-flex">
+                    <div class="d-flex align-center">
+                      <v-img
+                        height="40"
+                        width="40"
+                        src="../../assets/images/About/Strategy.svg"
+                        class="me-3"
+                      ></v-img>
+                      <p>Brand Strategy & Art Direction</p>
+                    </div>
+                  </div>
+                </v-col>
+                <v-col
+                  class="d-flex"
+                  cols="12"
+                  sm="6"
+                >
+                  <div class="d-flex">
+                    <div class="d-flex align-center">
+                      <v-img
+                        height="40"
+                        width="40"
+                        src="../../assets/images/About/Design.svg"
+                        class="me-3"
+                      ></v-img>
+                      <p>Trending Designing Experience</p>
                     </div>
                   </div>
                 </v-col>
@@ -143,11 +192,6 @@ const excessData = ref([
     width: "40",
   },
 ]);
-
-const getImageUrl = (path) => {
-  console.log(new URL(path, import.meta.url).href);
-  return new URL(path, import.meta.url).href;
-};
 </script>
 
 <style scoped>
