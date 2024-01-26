@@ -2,7 +2,7 @@
   <v-container class="our-works-wrapper">
     <v-container class="our-works d-flex">
       <v-row class="d-flex align-center justify-center">
-        <v-col cols="8">
+        <v-col cols="12" md="10" lg="8">
           <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
           <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
           <p class="global-header">

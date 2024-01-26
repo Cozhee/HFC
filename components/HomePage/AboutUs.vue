@@ -137,6 +137,7 @@ const excessData = ref([
 .about-page-wrapper {
   background: #fff;
   margin: 0;
+  padding: 100px 0;
 }
 .heading-text p {
   color: #000;
