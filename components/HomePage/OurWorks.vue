@@ -5,7 +5,9 @@
         <v-col cols="12">
           <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
           <h4 class="d-inline purple-pink-gradient ms-2">Our Works</h4>
-          <p class="global-header">Custom Design for <br class="brnodisplay">Your Digital Products.</p>
+          <p class="global-header">
+            Custom Design for <br class="brnodisplay" />Your Digital Products.
+          </p>
           <p class="home-page-mission-text">
             HJC is a digital agency passionate about storytelling, visual
             design, and technology. We collaborate with companies...
@@ -14,17 +16,6 @@
             Explore Our Mission
           </v-btn>
         </v-col>
-        <!-- <v-col sm="12" md="10" lg="6" class="d-none d-lg-flex">
-          <div class="container d-flex">
-            <v-img
-              class="rounded-xl d-none d-lg-block"
-              min-width="300"
-              contain
-              :aspect-ratio="1"
-              src="../../assets/images/girl_hacker.png"
-            ></v-img>
-          </div>
-        </v-col> -->
       </v-row>
     </v-container>
   </v-container>
@@ -82,7 +73,7 @@
 
 @media screen and (width < 505px) {
   .brnodisplay {
-    display: none
+    display: none;
   }
 }
 </style>

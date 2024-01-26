@@ -1,5 +1,5 @@
 <template>
-  <v-container class="app-header-wrapper">
+  <v-container fluid class="app-header-wrapper">
     <div class="app-header d-flex justify-space-between align-center">
       <div class="app-logo d-flex">
         <div>
@@ -84,7 +84,6 @@ function drawerOpenAndCloseMenu() {
 
 .app-header {
   background-color: white;
-  border-radius: 15px;
   padding: 10px;
 }
 
@@ -118,6 +117,7 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
+  padding: 0;
 }
 
 @media screen and (width < 960px) {

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="mt-6 v-container-wrapper">
+  <v-container fluid class="v-container-wrapper">
     <v-container>
       <v-row class="mb-16">
         <v-col>
@@ -99,6 +99,10 @@
 </template>
 <script setup></script>
 <style scoped>
+.v-container-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .pricing-card-container .v-col {
   display: flex;
 }
@@ -127,7 +131,7 @@
 }
 
 .pricing-cards {
-  background-color: rgb(52, 52, 52);
+  background-color: #8854e0;
   padding: 1.15rem;
 }
 
