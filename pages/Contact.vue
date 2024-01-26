@@ -1,8 +1,8 @@
 <template>
-  <div class="contact-main">
+  <div class="contact-main d-flex align-center">
     <v-container class="contact-container">
       <v-row>
-        <v-col col="6">
+        <v-col cols="12" md="6">
           <v-sheet color="rgba(0, 0, 0, 0)">
             <v-form @submit.prevent>
               <div class="d-flex">
@@ -53,14 +53,14 @@
             </v-form>
           </v-sheet>
         </v-col>
-        <v-col col="6" class="d-flex flex-column">
+        <v-col cols="12" md="6" class="d-flex flex-column order-first order-md-last">
           <p class="purple-pink-gradient text-body-2">
             <v-icon
               icon="mdi-network-pos purple-pink-gradient text-body-2"
             ></v-icon>
             REQUEST A FREE QUOTE
           </p>
-          <h2 class="mt-3 text-h3">Make Brand As Briliant One!</h2>
+          <h2 class="mt-3 text-h3">Contact Us!</h2>
           <p class="mt-4">
             Get in touch to chat about how we can help you build a better B2B
             brand. Don’t be shy. We’re great listeners, and even better
@@ -100,7 +100,7 @@ const rules = ref([
 <style scoped>
 .contact-main {
   width: 100%;
-  height: 70vh;
+  height: calc(100vh - 100px);
   background-color: rgba(0, 0, 0, 0);
 }
 .contact-container {
@@ -127,4 +127,6 @@ p {
 h2 {
   color: white;
 }
+
+
 </style>

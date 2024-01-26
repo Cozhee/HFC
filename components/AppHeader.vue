@@ -39,6 +39,7 @@
         class="nav-link"
         v-for="link in links"
         :prepend-icon="link.sideNavIcon"
+        :key="link"
         ><NuxtLink :to="link.route">
           {{ link.name }}
         </NuxtLink></v-list-item
@@ -52,7 +53,6 @@ import { ref, watch } from "vue";
 
 const links = ref([
   { name: "Home", route: "/", sideNavIcon: "mdi-home-circle" },
-  { name: "About", route: "/about", sideNavIcon: "mdi-account" },
   { name: "Services", route: "/services", sideNavIcon: "mdi-room-service" },
   { name: "Pricing", route: "/pricing", sideNavIcon: "mdi-currency-usd" },
   { name: "Contact", route: "/contact", sideNavIcon: "mdi-email-box" },

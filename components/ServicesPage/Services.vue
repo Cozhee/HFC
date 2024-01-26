@@ -4,7 +4,7 @@
       <v-row>
         <v-col>
           <div class="services-container">
-            <div class="services-header">
+            <div class="services-header justify-center">
               <div>
                 <v-icon icon="mdi-network-pos purple-pink-gradient"></v-icon>
                 <h4 class="d-inline purple-pink-gradient ms-2">
@@ -15,11 +15,11 @@
                 We Empower <br /> Clients
                 To Be<br /> Awesome
               </div>
-            </div>
-            <div class="services-content">
-              <p class="mission-text">
+              <p class="mission-text w-25">
                 Welcome to our web development agency, where we specialize in creating custom-designed websites from scratch using HTML and CSS. Our services include SEO to boost your online visibility, hassle-free hosting solutions, ongoing maintenance for optimal performance, and dedicated customer support for a seamless experience. Trust us to bring innovation and excellence to your digital presence.  
               </p>
+            </div>
+            <div class="services-content">
               <div
                 class="content-row"
                 v-for="data in contentData"
@@ -75,9 +75,6 @@ const contentData = ref([
 ]);
 </script>
 <style scoped>
-.services-wrapper {
-  margin-top: 25px;
-}
 .services-container {
   display: flex;
   flex-direction: column;
@@ -92,6 +89,7 @@ const contentData = ref([
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: calc(100vh - 100px);
 }
 
 .focus-text {
